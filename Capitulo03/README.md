@@ -193,71 +193,23 @@ Dentro de `com.example.advancedtracker`, crea únicamente los paquetes nuevos ne
 <br/>
 
 ```text
-
-|                       
-+---main
-|   |   AndroidManifest.xml
-|   |   
-|   +---java
-|   |   \---com
-|   |       \---example
-|   |           \---advancedtracker
-|   |               |   MainActivity.kt
-|   |               |   TrackerApplication.kt
-|   |               |   
-|   |               +---data
-|   |               |   +---datasource
-|   |               |   +---engine
-|   |               |   |       TelemetryEngine.kt
-|   |               |   |       
-|   |               |   \---repository
-|   |               |           TelemetryRepository.kt
-|   |               |           TelemetryRepositoryImpl.kt
-|   |               |           
-|   |               +---di
-|   |               |       RepositoryModule.kt
-|   |               |       
-|   |               +---domain
-|   |               |   +---model
-|   |               |   |   |   TelemetryData.kt
-|   |               |   |   |   TelemetryEngine.kt
-|   |               |   |   |   TelemetryModels.kt
-|   |               |   |   |   
-|   |               |   |   \---tracking
-|   |               |   |           TelemetryData.kt
-|   |               |   |           
-|   |               |   +---repository
-|   |               |   |       TelemetryRepository.kt
-|   |               |   |       
-|   |               |   \---usecase
-|   |               |           GetTelemetryStreamUseCase.kt
-|   |               |           SaveTelemetryUseCase.kt
-|   |               |           
-|   |               +---presentation
-|   |               |       TelemetryViewModel.kt
-|   |               |       
-|   |               \---ui
-|   |                   +---navigation
-|   |                   |       TelemetryScreens.kt
-|   |                   |       
-|   |                   +---screens
-|   |                   |   +---detail
-|   |                   |   |       EngineDetailScreen.kt
-|   |                   |   |       
-|   |                   |   \---list
-|   |                   |           EngineListScreen.kt
-|   |                   |           
-|   |                   +---telemetry
-|   |                   |       TelemetryScreen.kt
-|   |                   |       TelemetryUiEvent.kt
-|   |                   |       TelemetryUiState.kt
-|   |                   |       TelemetryViewModel.kt
-|   |                   |       
-|   |                   \---theme
-|   |                           Color.kt
-|   |                           Theme.kt
-|   |                           Type.kt
-|   |                           
+com.example.advancedtracker/
+│
+├── data/
+│   ├── datasource/
+│   └── repository/
+│
+├── domain/
+│   ├── model/
+|   |     ├─── tracking/
+│   ├── repository/
+│   └── usecase/
+│
+├── di/
+│
+└── ui/
+    ├── telemetry/
+    └── theme/
 ```
 
 <br/>
